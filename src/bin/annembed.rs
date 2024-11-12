@@ -32,10 +32,10 @@ use clap::{Arg, ArgAction, ArgMatches, Command};
 
 use hnsw_rs::prelude::*;
 
-use annembed::fromhnsw::hubness;
-use annembed::fromhnsw::kgproj::KGraphProjection;
-use annembed::fromhnsw::kgraph::{kgraph_from_hnsw_all, KGraph};
-use annembed::prelude::*;
+use annembed_gsearch::fromhnsw::hubness;
+use annembed_gsearch::fromhnsw::kgproj::KGraphProjection;
+use annembed_gsearch::fromhnsw::kgraph::{kgraph_from_hnsw_all, KGraph};
+use annembed_gsearch::prelude::*;
 
 /// Defines parameters to drive ann computations. See the crate [hnsw_rs](https://crates.io/crates/hnsw_rs)
 #[derive(Debug, Clone)]
